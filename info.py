@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '24143648'))
-API_HASH = environ.get('API_HASH', 'e0a048e72723774003ae2e3ac5927e97')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6491531689:AAGmxmlUNr13DsdEH7uV3q9iXjmbmcMlmZw")
+API_ID = int(environ.get('API_ID', '24401235'))
+API_HASH = environ.get('API_HASH', '149f7e13d7d861b27cffc3ab1fd52b22')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7833678410:AAFAIondwGDEYE4Zk8HbpQhF-wN-fxaM4Go")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -28,7 +28,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7255612720').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002237503909').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002350685005').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '7255612720').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -44,7 +44,7 @@ NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
 # MongoDB information
 SECONDDB_URI = environ.get('SECONDDB_URI', None)
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://kalpanapreethiney:uPyg88xQcs25APdM@cluster0.0uy7u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
+DATABASE_NAME = environ.get('DATABASE_NAME', "KAI")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -62,7 +62,7 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/universe_we_are')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/we_are_universee')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002214772109'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002192432040'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'we_are_universee')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
